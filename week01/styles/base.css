@@ -1,0 +1,27 @@
+#course-title {
+  display: block;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+.navlist{
+    background-color: rgb(192, 21, 21);
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.navlist li  {
+    flex: 1 1 auto;
+}
+nav ul{
+        list-style:none;
+}
+.navlist a{
+    color: white;
+    display: block;
+    text-align: center;
+    padding: .5rem;
+    font-size: 1em;
+    text-decoration: none;
+}
