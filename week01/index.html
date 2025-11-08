@@ -7,6 +7,10 @@
     <meta name="author" content="Jonas Chino">
     <meta name="description" content="a first week assingment on WDD 131: Dynamic Web Fundamentals author Jonas chino  keywords: wdd131, byuipathway, programming. ">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
@@ -20,17 +24,44 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Jonas chino</h1>
-        <div class="card"> 
-            im jonas chinno, im from bolivia, im 26 years, for a long time i taking a couse of byuipathway so its a ling time that i make a code, so its a little bit hard but its funny and i love programming 
+    <main class="home_grid">
+        <div class="aboutme"><h1>about me</h1></div>
+        <div class="card">         
+            
+            <p>My name is Jonas Chinno, I'm from Bolivia, and I'm 26 years old. It's been a long time since I took a BUI Pathway course, so I haven't programmed in a while. It's a little difficult to get back to 100%, but it's fun, and I love programming. One of the things I like most about programming is that our imagination is the only limit; if we can think it, we can create it.</p>
         </div>
+            <div class="jonas_img">
+             <img
+                  src="images/chinnoJ.jpg"
+                  alt="jonas chino"
+          /> 
+          </div>
+          <h2 class="city_tittle">La Paz-Bolivia</h2>
+          <div class="country">
+            <p>Bolivia is an incredible, beautiful country with very varied climates depending on the region. La Paz, the city where I live, is a beautiful city located at 3450 meters above sea level, considered one of the highest cities in the world. It has an interesting climate; in the morning it can be brightly sunny, but by the afternoon it can start to rain. Simply beautiful!</p>
+          </div>
+          <div class="lapaz_img">
+             <img
+                  src="images/La_Paz_Skyline.jpg"
+                  alt="lizard"
+          />
+          </div>
+          <div class="tittle_right"><h1>Web Dev Resources</h1></div>
+          <div class="right_content">
+
+                <ul >
+                    <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+                    <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Favorite Scripture</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
+          </div> 
     </main>
     <footer>
         <p>
             &copy; <span id="currentyear"></span> Jonas Chino. Bolivia
         </p>
-        <p id="lastModified"></p>
+        <p id="lastModified"> last modification</p>
     </footer>
 </body>
 </html>
