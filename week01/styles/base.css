@@ -12,6 +12,7 @@ p{
   font-size: 2.2em;
   font-weight: bold;
   background-color: rgb(17, 17, 137);
+  padding: 250px;
 
 
 }
@@ -27,7 +28,7 @@ p{
     flex: 1 1 auto;
 }
 nav ul{
-        list-style:none;
+    list-style:none;
 }
 .navlist a{
     color: white;
@@ -78,7 +79,8 @@ nav ul{
 
 .aboutme,
 .tittle_right, 
-#course-title{
+#course-title,
+footer{
     color: white;
     background-color: rgb(17, 17, 137);
     text-align: center;
@@ -89,4 +91,11 @@ nav ul{
     grid-column: 3/4;
     grid-row: 1;
 
+}
+header{
+    background-color: rgb(17, 17, 137);
+}
+nav ul li:hover{
+    background-color: rgb(17, 17, 137);
+    transition: .4s;
 }
