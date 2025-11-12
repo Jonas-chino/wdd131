@@ -1,0 +1,7 @@
+@media (min-width: 900px) {
+
+  main h1{
+  grid-column: 1/4;
+
+}
+}

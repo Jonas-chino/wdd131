@@ -33,13 +33,24 @@ nav a:hover {
   color: #00fbff;
 }
 
-
-
 figure {
   margin: 0;
 }
+header h1,
+footer, 
+main h1{
+  background-color: rgb(58, 150, 208);
+  text-align: center;
+}
+
 @media (max-width: 600px) {
   main {
     grid-template-columns: 1fr;
+
   }
+  main h1{
+  grid-column: 1;
+
+
+}
 }
