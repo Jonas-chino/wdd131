@@ -1,9 +1,13 @@
 @media (min-width: 900px) {
+  #menu_toggle{display: none;
+}
 
-  main h1{
+.nav_menu  {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+main h1{
   grid-column: 1/4;
 }
-#menu-toggle {
-        display: none;
-    }
 }

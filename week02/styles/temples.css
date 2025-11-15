@@ -39,6 +39,7 @@ nav a:hover {
   color: #00fbff;
 }
 
+
 figure {
   margin: 0;
 }
@@ -48,25 +49,28 @@ main h1{
   background-color: rgb(58, 150, 208);
   text-align: center;
 }
-  .hamburger-button {
-    display: none;
-  }
-  
-  .navigation-menu {
-    display: flex;
-  }
-#menu-toggle {
+#menu_toggle {
     display: block;
-    background-color: red;
+    background-color: rgb(56, 86, 222);
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
     font-size: 1.5rem;
     cursor: pointer;
-    border-radius: 5px;
-    width: 100%;
-    transition: background-color 0.3s ease;
+    border-radius: 15px;
+    width: 10%;
 }
+.nav_menu {
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.nav_menu.show {
+    display: flex;
+}
+
 @media (max-width: 600px) {
   main {
     grid-template-columns: 1fr;
@@ -74,7 +78,6 @@ main h1{
   }
   main h1{
   grid-column: 1;
-
 
 }
 }
