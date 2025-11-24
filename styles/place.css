@@ -37,3 +37,7 @@ header, footer{
     margin: 0;
     font-size: 1.8em;
 }
+.weather img{
+    width: 60px;
+    background-color: rgb(0,0,0,0.1);
+}
