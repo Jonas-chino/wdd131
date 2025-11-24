@@ -10,11 +10,11 @@ function calculateWindchill(wind, temp) {
 }
 
 if (temperature <= 50 && windSpeed > 3) {
-  // Calcular y mostrar el factor de enfriamiento del viento
+
   const windChill = calculateWindchill(temperature, windSpeed);
   document.getElementById("windchill").innerHTML = Math.round(windChill) + "°C";
 } else {
-  // Mostrar "N/A" si no se cumplen las condiciones
+
   document.getElementById("windchill").innerHTML = "N/A";
 }
 console("hello")
