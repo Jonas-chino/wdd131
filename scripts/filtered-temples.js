@@ -120,7 +120,6 @@ function displayTemples(templeList) {
     templesContainer.innerHTML = templeList.map(createTempleCard).join('');
 }
 
-
 document.addEventListener('DOMContentLoaded', () => {
     displayTemples(temples);
 
