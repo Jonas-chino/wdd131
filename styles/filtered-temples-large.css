@@ -1,8 +1,6 @@
 @media (min-width: 900px) {
-  #menu_toggle{display: none;
-}
 
-.nav_menu  {
+#nav_menu  {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -10,4 +8,7 @@
 main h1{
   grid-column: 1/4;
 }
-}
+
+
+} 
+

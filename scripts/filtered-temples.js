@@ -2,7 +2,7 @@ const currentYear = new Date().getFullYear();
 document.getElementById("lastModified").innerHTML = document.lastModified;
 
 const menuToggle = document.getElementById('menu_toggle');
-const navMenu = document.querySelector('.nav_menu');
+const navMenu = document.querySelector('#nav_menu');
 
 if (menuToggle && navMenu) {
     menuToggle.addEventListener('click', () => {
@@ -76,7 +76,32 @@ const temples = [
     area: 116642,
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-  },
+    },
+    {
+    templeName: "La Paz Bolivia Temple",
+    location: "La Paz, Bolivia ",
+    dedicated: "3 October 2021(Announcement)",
+    area: 18850,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/la-paz-bolivia-temple/la-paz-bolivia-temple-44435-main.jpg"
+    },
+    {
+    templeName: "Santa Cruz Bolivia Temple",
+    location: "Santa Cruz, Bolivia ",
+    dedicated: "4 October 2020(Announcement)",
+    area: 29000,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/santa-cruz-bolivia-temple/santa-cruz-bolivia-temple-48551-main.jpg"
+    },
+    {
+    templeName: "Salt Lake city utah Temple",
+    location: "Salt Lake City, Utah, united states ",
+    dedicated: "6–24 April 1893",
+    area: 382207,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-main.jpg"
+    },
+
 ];
 function createTempleCard(temple) {
     return `
@@ -94,4 +119,9 @@ function displayTemples(templeList) {
     const templesContainer = document.getElementById('temples-container');
     templesContainer.innerHTML = templeList.map(createTempleCard).join('');
 }
-  
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    displayTemples(temples);
+
+});
