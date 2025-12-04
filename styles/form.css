@@ -1,0 +1,52 @@
+body{
+    font-size: 1.5rem;
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #7769e2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1,h2, label{
+    font-style: italic;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group #confirm{
+    border-radius: 25px;
+    font-size: 1.2rem;
+}
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.star-rating{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+.star-rating input{
+    display: none;
+}
+.star-rating label {
+    color: #ddd;
+    font-size:50px;
+    padding: 0;
+    cursor: pointer;
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input:checked ~ label {
+    color: #ffca08;
+}
