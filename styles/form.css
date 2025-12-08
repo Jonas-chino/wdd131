@@ -50,3 +50,7 @@ textarea {
 .star-rating input:checked ~ label {
     color: #ffca08;
 }
+footer{
+    text-align: center;
+    background-color: #7769e2;
+}
