@@ -1,3 +1,20 @@
+const menuToggle = document.getElementById('menu_toggle');
+const navMenu = document.querySelector('#nav_menu');
+
+if (menuToggle && navMenu) {
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+        
+        if (navMenu.classList.contains('show')) {
+            menuToggle.textContent = '✕';
+        } else {
+            menuToggle.textContent = '☰';
+        }
+    });
+}
+
+
+
 const food = [
   {
     foodName: "Pique Macho",
